@@ -1,40 +1,18 @@
 import path from 'path';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import { ProgressPlugin } from 'webpack';
 import { Configuration } from 'webpack';
+import { BuildEnv, BuilPaths } from './config/build/types/config';;
+import { buildWebpackConfig } from './config/build/buildWebpackConfig';
 
-const config = (env: any): Configuration => {
+const config = (env: BuildEnv): Configuration => {
   const mode = env.mode || "development";
   const isDev = mode === "development";
-  const paths = {
+  const PORT = env.port || 3000;
+  const paths: BuilPaths = {
+    src: path.resolve(__dirname, "src"),
     entry: path.resolve(__dirname, "src", "index.ts"),
     build: path.resolve(__dirname, 'dist'),
     html: path.resolve(__dirname, "public", "index.html")
   };
-  return {
-    mode: mode,
-    entry: paths.entry,
-    output: {
-      filename: '[name].[contenthash].js',
-      path: paths.build,
-      clean: true
-    },
-    plugins: [
-      new HtmlWebpackPlugin({ template: paths.html }), new ProgressPlugin()
-    ],
-    module: {
-      rules: [
-        {
-          test: /\.tsx?$/,
-          use: 'ts-loader',
-          exclude: /node_modules/,
-        },
-      ],
-    },
-    resolve: {
-      extensions: ['.tsx', '.ts', '.js'],
-    },
-    devtool: isDev ? 'inline-source-map' : undefined,
-  };
+  return buildWebpackConfig({ mode, paths, port: PORT, isDev });
 };
 export default config;
