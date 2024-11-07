@@ -1,18 +1,19 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { MainLayout } from "../shared/layouts/MainLayout/MainLayout";
 import s from "./App.module.css";
-import { Suspense, useState } from "react";
+import { Suspense, useContext, useState } from "react";
 import { MainPage } from "@/pages/MainPage";
 import { StackPage } from "@/pages/StackPage";
 import { Logo } from "@/shared/ui/Logo/Logo";
+import { ThemeContext } from "./providers/context/ThemeContext";
+import { Theme } from "./providers/context/ui/ThemeProvider";
 
-type Theme = "light" | "dark";
 
 interface AppProps { };
 export const App = ({ }: AppProps) => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const { theme, setTheme } = useContext(ThemeContext);
 
-  const toggleTheme = () => {  setTheme(theme === "dark" ? "light" : "dark")};
+  const toggleTheme = () => { setTheme?.(theme === "dark" ? "light" : "dark"); };
 
   return (
     <div className={`${s.app} app_${theme}_theme`}>

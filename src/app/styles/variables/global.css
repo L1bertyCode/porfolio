@@ -41,5 +41,4 @@
   --font-size-xxxxl: 56px;
   --font-line-xxxxl: 64px;
   --font-xxxxl: var(--font-size-xxxxl) / var(--font-line-xxxxl) var(--font-family-main);
-
 }
