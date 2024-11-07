@@ -1,0 +1,7 @@
+.app_dark_theme {
+  --bg-color: rgb(25, 25, 25);
+  ;
+  --secondary-color: rgb(167, 167, 167);
+  --primary-color: rgb(204, 204, 204);
+  --accent-color: linear-gradient(90.00deg, rgb(19, 176, 245), rgb(231, 15, 170));
+}

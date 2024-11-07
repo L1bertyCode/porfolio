@@ -1,0 +1,9 @@
+.app_light_theme {
+  --bg-color: rgb(245, 245, 245);
+
+  --secondary-color: rgb(102, 102, 102);
+  ;
+  --primary-color: rgb(66, 68, 110);
+  ;
+  --accent-color: linear-gradient(90.00deg, rgb(19, 176, 245), rgb(231, 15, 170));
+}

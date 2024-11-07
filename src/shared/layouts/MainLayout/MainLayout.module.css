@@ -1,3 +1,21 @@
 .mainLayout {
-  
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+footer {
+  width: 100%;
+  height: var(--footer-height);
 }

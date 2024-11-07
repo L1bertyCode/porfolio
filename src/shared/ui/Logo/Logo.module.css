@@ -1,0 +1,5 @@
+.logo {
+  background-clip: text;
+  background-image: var(--accent-color);
+  color: transparent;
+}
