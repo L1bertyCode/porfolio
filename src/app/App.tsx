@@ -5,16 +5,13 @@ import { Suspense, useContext, useState } from "react";
 import { MainPage } from "@/pages/MainPage";
 import { StackPage } from "@/pages/StackPage";
 import { Logo } from "@/shared/ui/Logo/Logo";
-import { ThemeContext } from "./providers/context/ThemeContext";
-import { Theme } from "./providers/context/ui/ThemeProvider";
+
+import { useTheme } from "./providers/context/useTheme";
 
 
 interface AppProps { };
 export const App = ({ }: AppProps) => {
-  const { theme, setTheme } = useContext(ThemeContext);
-
-  const toggleTheme = () => { setTheme?.(theme === "dark" ? "light" : "dark"); };
-
+  const { theme, toggleTheme } = useTheme();
   return (
     <div className={`${s.app} app_${theme}_theme`}>
       <MainLayout

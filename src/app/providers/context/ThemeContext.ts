@@ -1,8 +1,10 @@
 import { createContext } from "react";
-import { Theme } from "./ui/ThemeProvider";
+
+export type Theme = "light" | "dark";
 
 interface ThemeContextProps {
   theme?: Theme;
   setTheme?: (theme: Theme) => void;
 }
+
 export const ThemeContext = createContext<ThemeContextProps>({});
