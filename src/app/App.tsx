@@ -7,30 +7,29 @@ import { StackPage } from "@/pages/StackPage";
 import { Logo } from "@/shared/ui/Logo/Logo";
 
 import { useTheme } from "./providers/context/useTheme";
-
+import cn from "classnames";
+import { AppRouter } from "./providers/router";
+import { routesConfig } from "@/shared/config/routesConfig";
 
 interface AppProps { };
 export const App = ({ }: AppProps) => {
   const { theme, toggleTheme } = useTheme();
   return (
-    <div className={`${s.app} app_${theme}_theme`}>
+    <div className={cn(s.app, `app_${theme}_theme`)}>
       <MainLayout
         header={<>
           <Logo />
           <button onClick={toggleTheme}>
             Theme
           </button>
-          <nav><Link to={"/"}>Home</Link>
-            <Link to={"/stack"}>Teacj Stack</Link>
+          <nav>
+            {Object.values(routesConfig).map(route => <Link key={route.path} to={route.path || "/"}>{route.name}</Link>)}
           </nav>
 
         </>}
         main={
           <Suspense fallback={<div>Loading...</div>}>
-            <Routes>
-              <Route path="/" element={<MainPage />} />
-              <Route path="/stack" element={<StackPage />} />
-            </Routes>
+            <AppRouter />
           </Suspense>
         }
         footer={<div>footer</div>}
