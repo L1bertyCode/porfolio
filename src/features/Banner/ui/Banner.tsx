@@ -1,5 +1,7 @@
 import { Text } from "@/shared/ui/Text/Text";
 import s from "./Banner.module.css";
+import Photo from "@/shared/assets/img/photo.jpg";
+
 interface BannerProps { };
 export const Banner = ({ }: BannerProps) => {
   return (
@@ -13,6 +15,11 @@ export const Banner = ({ }: BannerProps) => {
         Front-end<br />
         Developer
       </h1>
+      <span className={s.photoWrapper}>
+        <img
+          className={s.photo} src={Photo}
+          alt="photo" />
+      </span>
     </div>
   );
 };

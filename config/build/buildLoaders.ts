@@ -24,5 +24,9 @@ export function buildLoaders(isDev: boolean): RuleSetRule[] {
         },
       }]
   };
-  return [tsLoader, cssLoader];
+  const fileLoader = {
+    test: /\.(jpe?g|png|gif|svg)$/i,
+    loader: 'file-loader',
+  };
+  return [tsLoader, cssLoader, fileLoader];
 }
