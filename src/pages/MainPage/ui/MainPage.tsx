@@ -1,7 +1,9 @@
+import { Banner } from "@/features/Banner";
+
 const MainPage = () => {
   return (
     <div>
-      MainPage
+      <Banner />
     </div>
   );
 };

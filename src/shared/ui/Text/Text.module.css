@@ -1,0 +1,13 @@
+.primary {
+  color: var(--primary-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.accent {
+  background-clip: text;
+  background-image: var(--accent-color);
+  color: transparent;
+}
