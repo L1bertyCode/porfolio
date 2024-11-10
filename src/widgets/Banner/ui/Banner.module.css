@@ -1,4 +1,14 @@
+.banner {
+  min-height: 450px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .photoWrapper {
+  margin: 0 auto;
   width: 300px;
   height: 300px;
   position: relative;

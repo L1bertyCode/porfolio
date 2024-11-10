@@ -1,15 +1,15 @@
 import { Link, Route, Routes } from "react-router-dom";
 import { MainLayout } from "../shared/layouts/MainLayout/MainLayout";
 import s from "./App.module.css";
-import { Suspense, useContext, useState } from "react";
-import { MainPage } from "@/pages/MainPage";
-import { StackPage } from "@/pages/StackPage";
+import { Suspense } from "react";
+
 import { Logo } from "@/shared/ui/Logo/Logo";
 
 import { useTheme } from "./providers/context/useTheme";
-import cn from "classnames";
 import { AppRouter } from "./providers/router";
 import { routesConfig } from "@/shared/config/routesConfig";
+
+import cn from "classnames";
 
 interface AppProps { };
 export const App = ({ }: AppProps) => {

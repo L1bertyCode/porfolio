@@ -1,10 +1,16 @@
-import { Banner } from "@/features/Banner";
+import { Banner } from "@/widgets/Banner";
+import { Contacts } from "@/widgets/Contacts";
+import { ProjectsList } from "@/widgets/Projects";
+import { Stack } from "@/widgets/Stack";
 
 const MainPage = () => {
   return (
-    <div>
+    <>
       <Banner />
-    </div>
+      <Stack />
+      <ProjectsList />
+      <Contacts />
+    </>
   );
 };
 
