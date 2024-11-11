@@ -6,11 +6,10 @@ import { Link } from "react-router-dom";
 import { AppLink } from "@/shared/ui/AppLink/AppLink";
 interface HeaderProps { };
 export const Header = ({ }: HeaderProps) => {
-  const { theme, toggleTheme } = useTheme();
+  const {  toggleTheme } = useTheme();
   return (
     <header className={s.header}>
       <Logo />
-
       <div>
         <nav>
           {Object.values(routesConfig).map(route => <AppLink key={route.path} to={route.path || "/"}>{route.name}</AppLink>)}

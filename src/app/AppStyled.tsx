@@ -7,15 +7,15 @@ import { useTheme } from "./providers/context/useTheme";
 import { AppRouter } from "./providers/router";
 
 import cn from "classnames";
-import { Header } from "@/widgets/Header";
+import { HeaderStyled } from "@/widgets/Header";
 
 interface AppProps { };
-export const App = ({ }: AppProps) => {
+export const AppStyled = ({ }: AppProps) => {
   const { theme } = useTheme();
   return (
     <div className={cn(s.app, `app_${theme}_theme`)}>
       <MainLayout
-        header={<Header />}
+        header={<HeaderStyled />}
         main={
           <Suspense fallback={<div>Loading...</div>}>
             <AppRouter />

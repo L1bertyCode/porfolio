@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+
 import s from "./Logo.module.css";
+import { AppLink } from "../AppLink/AppLink";
 interface LogoProps { };
 export const Logo = ({ }: LogoProps) => {
   return (
-    <Link to='/' className={s.logo}>
+    <AppLink
+     to='/' 
+     className={s.logo}>
       Logo
-    </Link>
+    </AppLink>
   );
 };
