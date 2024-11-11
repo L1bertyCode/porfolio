@@ -1,0 +1,9 @@
+.appLink {
+  padding: var(--indent-s) var(--indent-m);
+}
+
+.appLink:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--accent-color);
+}

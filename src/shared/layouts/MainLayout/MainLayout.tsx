@@ -8,8 +8,7 @@ interface MainLayoutProps {
 export const MainLayout = ({ header, main, footer }: MainLayoutProps) => {
   return (
     <div className={s.mainLayout}>
-      <header>{header}
-      </header>
+      <>{header}</>
       <main>{main}</main>
       {footer && <footer>{footer}</footer>}
     </div>

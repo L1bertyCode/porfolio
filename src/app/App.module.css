@@ -5,3 +5,15 @@
   color: var(--secondary-color);
   padding: 0 var(--indent-m);
 }
+
+@media(min-width: 480px) {
+  .app {
+    padding: 0 var(--indent-xl);
+  }
+}
+
+@media(min-width: 767px) {
+  .app {
+    padding: 0 var(--indent-xxxl);
+  }
+}

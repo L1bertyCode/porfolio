@@ -10,23 +10,15 @@ import { AppRouter } from "./providers/router";
 import { routesConfig } from "@/shared/config/routesConfig";
 
 import cn from "classnames";
+import { Header } from "@/widgets/Header";
 
 interface AppProps { };
 export const App = ({ }: AppProps) => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div className={cn(s.app, `app_${theme}_theme`)}>
       <MainLayout
-        header={<>
-          <Logo />
-          <button onClick={toggleTheme}>
-            Theme
-          </button>
-          <nav>
-            {Object.values(routesConfig).map(route => <Link key={route.path} to={route.path || "/"}>{route.name}</Link>)}
-          </nav>
-
-        </>}
+        header={<Header />}
         main={
           <Suspense fallback={<div>Loading...</div>}>
             <AppRouter />
