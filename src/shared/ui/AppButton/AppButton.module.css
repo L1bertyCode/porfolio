@@ -1,0 +1,32 @@
+.appButton {
+  cursor: pointer;
+}
+
+.clear {
+  background: none;
+  border: none;
+}
+
+.clear.secondary {
+  color: var(--primary-color);
+}
+
+.clear.secondary:hover {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--accent-color);
+}
+
+.clear.accented {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--accent-color);
+  
+  border-radius: 8px;
+  padding: var(--indent-s) var(--indent-m);
+}
+
+.clear.accented:hover {
+  color: var(--primary-color);
+  background: var(--accent-color);
+}

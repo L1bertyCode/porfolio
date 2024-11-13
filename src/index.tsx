@@ -8,7 +8,7 @@ const root = createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <BrowserRouter>
     <ThemeProvider>
-      <AppStyled />
+      <App />
     </ThemeProvider>
   </BrowserRouter>
 );;
