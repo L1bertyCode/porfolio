@@ -14,15 +14,17 @@ export const App = ({ }: AppProps) => {
   const { theme } = useTheme();
   return (
     <div className={cn(s.app, `app_${theme}_theme`)}>
-      <MainLayout
-        header={<Header />}
-        main={
-          <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
+        <MainLayout
+          header={<Header />}
+          main={
+
             <AppRouter />
-          </Suspense>
-        }
-        footer={<div>footer</div>}
-      />
+          }
+          footer={<div>footer</div>}
+        />
+      </Suspense>
+
     </div>
   );
 };
