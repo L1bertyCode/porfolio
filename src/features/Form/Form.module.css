@@ -1,0 +1,39 @@
+.form {
+  width: 570px;
+  margin: 0 auto;
+  padding: var(--font-line-xxl);
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  width: 100%;
+}
+
+.contacts>input {
+  width: 50%;
+}
+
+input[type="text"],
+textarea {
+  padding: var(--indent-m) var(--indent-s);
+  margin-bottom: var(--indent-xxl);
+  border-radius: var(--indent-s);
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+input[type="button"] {
+  padding: var(--indent-m) var(--indent-s);
+
+
+  /* color: var(--primary-color);
+  border-width: 4px;
+  border-style: solid;
+  border-image: var(--accent-color); */
+
+  cursor: pointer;
+}
