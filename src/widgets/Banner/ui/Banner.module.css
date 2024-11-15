@@ -32,3 +32,19 @@ h1 {
   height: 280px;
   border-radius: 50%;
 }
+
+@media(min-width:767px) {
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    width: 50%;
+  }
+
+  .photoWrapper {
+    width: 50%;
+  }
+}

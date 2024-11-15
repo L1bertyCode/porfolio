@@ -1,7 +1,6 @@
 .form {
-  width: 570px;
+  width: 100%;
   margin: 0 auto;
-  padding: var(--font-line-xxl);
   display: flex;
   flex-direction: column;
 }
@@ -11,7 +10,7 @@
 }
 
 .contacts>input {
-  width: 50%;
+  width: 100%;
 }
 
 input[type="text"],
@@ -36,4 +35,15 @@ input[type="button"] {
   border-image: var(--accent-color); */
 
   cursor: pointer;
+}
+
+@media(min-width:767px) {
+  .form {
+    width: 700px;
+
+  }
+
+  .contacts>input {
+    width: 50%;
+  }
 }
