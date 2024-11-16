@@ -8,6 +8,7 @@ import { AppRouter } from "./providers/router";
 
 import cn from "classnames";
 import { Header } from "@/widgets/Header";
+import { Footer } from "@/widgets/Footer";
 
 interface AppProps { };
 export const App = ({ }: AppProps) => {
@@ -21,7 +22,7 @@ export const App = ({ }: AppProps) => {
 
             <AppRouter />
           }
-          footer={<div>footer</div>}
+          footer={<Footer />}
         />
       </Suspense>
 

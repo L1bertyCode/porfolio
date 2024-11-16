@@ -10,7 +10,7 @@ export const MainLayout = ({ header, main, footer }: MainLayoutProps) => {
     <div className={s.mainLayout}>
       <>{header}</>
       <main>{main}</main>
-      {footer && <footer>{footer}</footer>}
+      {footer && <>{footer}</>}
     </div>
   );
 };
