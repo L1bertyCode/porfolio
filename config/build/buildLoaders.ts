@@ -28,5 +28,21 @@ export function buildLoaders(isDev: boolean): RuleSetRule[] {
     test: /\.(jpe?g|png|gif|svg)$/i,
     loader: 'file-loader',
   };
-  return [tsLoader, cssLoader, fileLoader];
+
+  const svgrLoader = {
+    test: /\.svg$/,
+    use: [{
+      loader: '@svgr/webpack',
+      options: {
+        native: true,
+      },
+    },],
+  };
+
+  return [
+    tsLoader,
+    cssLoader,
+    fileLoader,
+    svgrLoader
+  ];
 }

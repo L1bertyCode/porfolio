@@ -1,3 +1,10 @@
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .app {
   min-height: 100vh;
   font: var(--font-m);

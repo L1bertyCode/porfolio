@@ -5,9 +5,9 @@ interface LogoProps { };
 export const Logo = ({ }: LogoProps) => {
   return (
     <AppLink
-     to='/' 
-     className={s.logo}>
-      Logo
+      to='/'
+      className={s.logo}>
+      V914
     </AppLink>
   );
 };
