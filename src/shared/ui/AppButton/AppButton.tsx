@@ -9,11 +9,14 @@ interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   colorType?: AppButtonColorType;
 }
 export const AppButton = ({ children,
+  onClick,
   variant = "clear",
   colorType = "secondary"
 }: AppButtonProps) => {
   return (
-    <button className={cn(s.appButton, s[variant], s[colorType])}>
+    <button
+      onClick={onClick}
+      className={cn(s.appButton, s[variant], s[colorType])}>
       {children}
     </button>
   );

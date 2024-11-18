@@ -20,13 +20,14 @@ export const Header = ({ }: HeaderProps) => {
           {Object.values(routesConfig).map(route => <AppLink key={route.path} to={route.path || "/"}>{route.name}</AppLink>)}
           {Object.values(routesConfig).map(route => <AppLink key={route.path} to={route.path || "/"}>{route.name}</AppLink>)}
         </nav>
+        <span className={s.burger}></span>
         <Socials />
         <AppButton onClick={toggleTheme}
           colorType="accented">
           {t("Theme")}
         </AppButton>
         <AppButton onClick={() => {
-          i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "Ru" : "en");
+          i18n.changeLanguage(i18n.resolvedLanguage === "en" ? "ru" : "en");
         }}
           colorType="accented">
           {t("Lang")}

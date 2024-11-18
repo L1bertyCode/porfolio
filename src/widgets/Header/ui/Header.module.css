@@ -11,3 +11,55 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.burger {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: var(--primary-color);
+  position: relative;
+  cursor: pointer;
+}
+
+.burger:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: var(--primary-color);
+  top: 8px;
+  transition: all var(--transition-delay) linear;
+}
+
+.burger:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: var(--primary-color);
+  top: -8px;
+  transition: all var(--transition-delay) linear;
+}
+
+.burger:hover {
+  background: transparent;
+}
+
+.burger:hover.burger:after {
+  transform: rotateZ(-45deg);
+  top: 0;
+  transition: all var(--transition-delay) linear;
+}
+
+.burger:hover.burger:before {
+  transform: rotateZ(45deg);
+  top: 0;
+  transition: all var(--transition-delay) linear;
+}
+
+
+@media(max-width:767px) {
+  nav {
+    display: none;
+  }
+}

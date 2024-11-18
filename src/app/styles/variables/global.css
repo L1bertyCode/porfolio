@@ -1,4 +1,6 @@
 :root {
+  /* Transition */
+  --transition-delay: 0.3s;
   /* Sizes */
   --header-height: 80px;
   --footer-height: 180px;
