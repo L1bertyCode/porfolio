@@ -11,3 +11,11 @@
   background-image: var(--accent-color);
   color: transparent;
 }
+
+.h1 {
+  font: var(--font-xxxxl);
+}
+
+.h2 {
+  font: var(--font-xxxl);
+}

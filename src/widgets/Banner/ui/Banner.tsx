@@ -6,14 +6,24 @@ interface BannerProps { };
 export const Banner = ({ }: BannerProps) => {
   return (
     <section className={s.banner}>
-      <h1>
-        I'm <Text
+      <div>
+        <Text
+          text={`I'm`} header="h1"
+        />
+        <Text
           text={"Vyacheslav"}
           colorType="accent"
-        /><br />
-        Front-end<br />
-        Developer
-      </h1>
+          header="h1"
+        />
+        <br />
+        <Text
+          text={`Front-end`} header="h1"
+        />
+        <br />
+        <Text
+          text={`Developer`} header="h1"
+        />
+      </div>
       <div className={s.photoWrapper}>
         <img
           className={s.photo} src={Photo}
