@@ -8,6 +8,10 @@
   background: var(--bg-color);
 }
 
+section {
+  margin: 100px 0;
+}
+
 /* 1200px
 992px
 768px

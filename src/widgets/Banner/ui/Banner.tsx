@@ -8,6 +8,10 @@ export const Banner = ({ }: BannerProps) => {
     <section className={s.banner}>
       <div>
         <Text
+          text={`Hi,`} header="h1"
+        />
+        <br />
+        <Text
           text={`I'm`} header="h1"
         />
         <Text
@@ -17,11 +21,7 @@ export const Banner = ({ }: BannerProps) => {
         />
         <br />
         <Text
-          text={`Front-end`} header="h1"
-        />
-        <br />
-        <Text
-          text={`Developer`} header="h1"
+          text={`Front-end Developer`} header="h1"
         />
       </div>
       <div className={s.photoWrapper}>

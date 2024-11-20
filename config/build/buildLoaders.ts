@@ -31,12 +31,7 @@ export function buildLoaders(isDev: boolean): RuleSetRule[] {
 
   const svgrLoader = {
     test: /\.svg$/,
-    use: [{
-      loader: '@svgr/webpack',
-      options: {
-        native: true,
-      },
-    },],
+    use: ['@svgr/webpack'],
   };
 
   return [

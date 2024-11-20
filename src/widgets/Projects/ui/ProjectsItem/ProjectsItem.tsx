@@ -1,19 +1,33 @@
+import { Text } from "@/shared/ui/Text/Text";
 import s from "./ProjectsItem.module.css";
 interface ProjectsItemProps { };
 export const ProjectsItem = ({ }: ProjectsItemProps) => {
   return (
     <div className={s.projectsItem}>
-      <img src="" alt="project-img" />
+      <img src="" alt="project-img" className={s.img} />
       <div className={s.content}>
-        <h4>Project Tile goes here</h4>
-        <div className={s.desc}>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</div>
+        <Text
+          text={"Project Tile goes here"}
+          header="h4"
+          colorType="primary"
+        />
+
+        <div className={s.description}>This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</div>
         <div className={s.stack}
         >Tech stack : HTML , JavaScript, SASS, React
         </div>
-        <div>
-          <a href="#">Live Preview</a>
+        <div className={s.links}>
           <a href="#">
-            View Code
+            <Text
+              text={"Live Preview"}
+              colorType="primary"
+            />
+          </a>
+          <a href="#">
+            <Text
+              text={"View Code"}
+              colorType="primary"
+            />
           </a>
         </div>
       </div>

@@ -8,9 +8,14 @@ export const Stack = ({ }: StackProps) => {
       <Text
         text="My Tech Stack"
         header="h2"
+        colorType="primary"
       />
-      "
-      <h3> Technologies I’ve been working with recently</h3>
+      <br />
+      <Text
+        text="Technologies I’ve been working with recently"
+        header="h3"
+      />
+      <br />
       <span>stack </span>
       <span>stack </span>
       <span>stack </span>

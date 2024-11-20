@@ -19,3 +19,11 @@
 .h2 {
   font: var(--font-xxxl);
 }
+
+.h3 {
+  font: var(--font-xxl);
+}
+
+.h4 {
+  font: var(--font-xl)
+}
