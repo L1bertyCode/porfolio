@@ -6,13 +6,13 @@ export const Footer = ({ }: FooterProps) => {
     <footer className={s.footer}>
       <div className={s.topFooter}>
         <Logo />
-        <div>
+        <div className={s.info}>
           <div className={s.phone}>Phone</div>
           <div className={s.email}>Email</div>
           <div className={s.socials}>Socials</div>
-          <hr />
         </div>
       </div>
+      <hr />
       <div className={s.bottomFooter}>
         <div className={s.nav}>Nav</div>
         <div className={s.name}>Name</div>

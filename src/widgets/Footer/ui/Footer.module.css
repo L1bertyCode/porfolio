@@ -1,3 +1,25 @@
 .footer {
   height: var(--footer-height);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info {
+  min-width: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

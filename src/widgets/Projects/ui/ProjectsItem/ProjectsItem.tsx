@@ -1,10 +1,12 @@
 import { Text } from "@/shared/ui/Text/Text";
 import s from "./ProjectsItem.module.css";
+import img from "@/shared/assets/img/itemBg3.png";
+
 interface ProjectsItemProps { };
 export const ProjectsItem = ({ }: ProjectsItemProps) => {
   return (
     <div className={s.projectsItem}>
-      <img src="" alt="project-img" className={s.img} />
+      <img src={img} alt="project-img" className={s.img} />
       <div className={s.content}>
         <Text
           text={"Project Tile goes here"}
