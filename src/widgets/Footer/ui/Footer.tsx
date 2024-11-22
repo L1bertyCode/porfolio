@@ -1,5 +1,7 @@
 import { Logo } from "@/shared/ui/Logo/Logo";
 import s from "./Footer.module.css";
+import { NavList } from "@/features/NavList";
+import { Socials } from "@/features/Socials";
 interface FooterProps { };
 export const Footer = ({ }: FooterProps) => {
   return (
@@ -9,12 +11,12 @@ export const Footer = ({ }: FooterProps) => {
         <div className={s.info}>
           <div className={s.phone}>Phone</div>
           <div className={s.email}>Email</div>
-          <div className={s.socials}>Socials</div>
+          <Socials />
         </div>
       </div>
       <hr />
       <div className={s.bottomFooter}>
-        <div className={s.nav}>Nav</div>
+        <NavList />
         <div className={s.name}>Name</div>
       </div>
     </footer>

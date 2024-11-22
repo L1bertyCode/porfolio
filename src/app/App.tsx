@@ -19,7 +19,6 @@ export const App = ({ }: AppProps) => {
         <MainLayout
           header={<Header />}
           main={
-
             <AppRouter />
           }
           footer={<Footer />}
