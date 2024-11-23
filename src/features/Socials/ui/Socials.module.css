@@ -4,3 +4,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.link {
+  fill: #FFFFFF;
+}
+
+.link:hover {
+  fill: #A7A7A7
+}

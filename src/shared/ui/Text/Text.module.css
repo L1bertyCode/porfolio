@@ -1,3 +1,7 @@
+.text {
+  display: inline-block;
+}
+
 .primary {
   color: var(--primary-color);
 }
@@ -18,10 +22,12 @@
 
 .h2 {
   font: var(--font-xxxl);
+  margin-bottom: var(--indent-xl);
 }
 
 .h3 {
   font: var(--font-xxl);
+  margin-bottom: var(--indent-xxxl);
 }
 
 .h4 {
