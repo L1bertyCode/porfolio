@@ -7,22 +7,37 @@ import { RouteProps } from "react-router-dom";
 export enum AppRoutes {
   MAIN = "main",
   STACK = "stack",
+  PROJECTS = "projects",
+  CONTACTS = "contacts",
 };
 
 export const RoutePaths: Record<AppRoutes, string> = {
   [AppRoutes.MAIN]: "/",
-  [AppRoutes.STACK]: "/stack"
+  [AppRoutes.STACK]: "/stack",
+  [AppRoutes.PROJECTS]: "/porjects",
+  [AppRoutes.CONTACTS]: "/contacts"
 };
 
 export const routesConfig: Record<AppRoutes, RouteProps & { name: string; }> = {
   main: {
-    path: "/",
+    path: RoutePaths.main,
     element: <MainPage />,
     name: "Home"
-  }, stack: {
-    path: "/stack",
+  },
+  stack: {
+    path: RoutePaths.stack,
     element: <StackPage />,
     name: "Teach Stack"
+  },
+  projects: {
+    path: RoutePaths.projects,
+    element: <StackPage />,
+    name: "Projects"
+  },
+  contacts: {
+    path: RoutePaths.contacts,
+    element: <StackPage />,
+    name: "Contacts"
   }
 };
 

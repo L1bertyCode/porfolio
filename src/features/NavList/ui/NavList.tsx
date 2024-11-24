@@ -6,7 +6,6 @@ export const NavList = ({ }: NavListProps) => {
   return (
     <nav>
       {Object.values(routesConfig).map(route => <AppLink key={route.path} to={route.path || "/"}>{route.name}</AppLink>)}
-      {Object.values(routesConfig).map(route => <AppLink key={route.path} to={route.path || "/"}>{route.name}</AppLink>)}
     </nav>
   );
 };

@@ -3,3 +3,7 @@
   background-image: var(--accent-color);
   color: transparent;
 }
+
+.logo span {
+  margin-bottom: 0;
+}
