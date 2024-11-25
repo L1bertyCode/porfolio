@@ -17,7 +17,7 @@ export const Footer = ({ }: FooterProps) => {
       <hr />
       <div className={s.bottomFooter}>
         <NavList />
-        <div className={s.name}>Name</div>
+        <div className={s.title}>Designed and built by <span className={s.name}>Viacheslav</span></div>
       </div>
     </footer>
   );

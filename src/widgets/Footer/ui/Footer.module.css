@@ -23,3 +23,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.title {
+  font-size: var(--font-size-l);
+}
+
+.name {
+  color: transparent;
+  background-clip: text;
+  background-image: var(--accent-color);
+  font-size: var(--font-size-xl);
+}

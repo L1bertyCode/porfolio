@@ -1,3 +1,4 @@
+import { AppButton } from "@/shared/ui/AppButton/AppButton";
 import s from "./Form.module.css";
 interface FormProps { };
 export const Form = ({ }: FormProps) => {
@@ -9,7 +10,10 @@ export const Form = ({ }: FormProps) => {
         <input type="text" placeholder="Phone" />
       </div>
       <textarea name="" id=""></textarea>
-      <input type="button" value="Send" />
+      <AppButton variant="filled"
+        colorType="accented">
+        Send
+      </AppButton>
     </form>
   );
 };
