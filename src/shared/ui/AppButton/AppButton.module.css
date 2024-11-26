@@ -32,14 +32,36 @@
 }
 
 .filled.accented {
+  position: relative;
+  z-index: 1;
   padding: 10px 24px;
   border-radius: var(--indent-s);
   background: var(--accent-color);
   color: var(--primary-color);
-  border: 2px solid var(--accent-color);
+
+
+  border: 2px solid transparent;
+  border-radius: 2em;
+  background: linear-gradient(#eee, #eee 0) text,
+    var(--accent-color) border-box;
+
 }
 
+/* .filled.accented:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: -2px;
+  border: 2px solid var(--accent-color);
+} */
+
 .filled.accented:hover {
-  background: #fff;
-  color: var(--secondary-color)
+  color: transparent;
+  background-clip: text;
+  background-image: var(--accent-color);
+
 }
