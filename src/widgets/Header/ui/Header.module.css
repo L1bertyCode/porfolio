@@ -19,6 +19,7 @@
   background: var(--primary-color);
   position: relative;
   cursor: pointer;
+  display: none;
 }
 
 .burger:before {
@@ -55,4 +56,15 @@
   transform: rotateZ(45deg);
   top: 0;
   transition: all var(--transition-delay) linear;
+}
+
+@media(max-width:767px) {
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    margin-right: var(--indent-xl);
+  }
 }

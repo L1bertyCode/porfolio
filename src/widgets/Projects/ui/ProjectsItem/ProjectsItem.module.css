@@ -3,8 +3,9 @@
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
   background: rgb(54, 54, 54);
   min-width: 373px;
-  width: 30%;
+  width: 31.5%;
   min-height: 567px;
+  margin-bottom: 20px;
 }
 
 .content {

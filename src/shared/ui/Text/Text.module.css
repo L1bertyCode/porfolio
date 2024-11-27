@@ -33,3 +33,16 @@
 .h4 {
   font: var(--font-xl)
 }
+
+@media (max-width:991px) {
+  .h1 {
+    font: var(--font-xxxl);
+
+  }
+}
+
+@media (max-width:767px) {
+  .h1 {
+    font: var(--font-xxxxl);
+  }
+}

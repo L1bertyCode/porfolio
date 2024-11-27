@@ -6,7 +6,7 @@ interface BannerProps { };
 export const Banner = ({ }: BannerProps) => {
   return (
     <section className={s.banner}>
-      <div>
+      <div className={s.title}>
         <Text
           text={`Hi,`} header="h1"
         />

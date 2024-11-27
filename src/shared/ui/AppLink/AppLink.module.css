@@ -1,5 +1,5 @@
 .appLink {
-  padding: var(--indent-xs) var(--indent-xxxl);
+  padding: var(--indent-xs) var(--indent-xl);
 }
 
 .appLink:hover {

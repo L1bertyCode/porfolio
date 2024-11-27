@@ -44,7 +44,8 @@
   border-radius: 2em;
   background: linear-gradient(#eee, #eee 0) text,
     var(--accent-color) border-box;
-
+  /* background: linear-gradient(#eee, #eee 0) padding-box,
+    var(--accent-color) border-box; */
 }
 
 /* .filled.accented:before {

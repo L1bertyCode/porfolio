@@ -15,10 +15,10 @@ export const Header = ({ }: HeaderProps) => {
     <header className={s.header}>
       <Logo />
       <div>
-        <NavList />
-        {/* <span className={s.burger}></span> */}
+        <NavList className={s.nav} />
+        <span className={s.burger}></span>
         <Socials />
-        <AppButton onClick={toggleTheme}
+        {/* <AppButton onClick={toggleTheme}
           colorType="accented">
           {t("Theme")}
         </AppButton>
@@ -27,7 +27,7 @@ export const Header = ({ }: HeaderProps) => {
         }}
           colorType="accented">
           {t("Lang")}
-        </AppButton>
+        </AppButton> */}
       </div>
     </header>
   );

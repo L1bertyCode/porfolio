@@ -27,7 +27,6 @@ export const ProjectsList = ({ }: ProjectsListProps) => {
       />
       <div className={s.list}>
         <ProjectsItem />
-
         <ProjectsItem />
         <ProjectsItem />
       </div>
