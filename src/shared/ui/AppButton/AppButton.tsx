@@ -7,16 +7,18 @@ interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: AppButtonVariant;
   colorType?: AppButtonColorType;
+  className?: string;
 }
 export const AppButton = ({ children,
   onClick,
   variant = "clear",
-  colorType = "secondary"
+  colorType = "secondary",
+  className
 }: AppButtonProps) => {
   return (
     <button
       onClick={onClick}
-      className={cn(s.appButton, s[variant], s[colorType])}>
+      className={cn(s.appButton, s[variant], s[colorType], className)}>
       {children}
     </button>
   );

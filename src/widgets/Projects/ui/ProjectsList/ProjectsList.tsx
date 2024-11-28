@@ -1,6 +1,9 @@
 import { Text } from "@/shared/ui/Text/Text";
 import { ProjectsItem } from "../ProjectsItem/ProjectsItem";
 import s from "./ProjectsList.module.css";
+import { AppButton } from "@/shared/ui/AppButton/AppButton";
+import { AppLink } from "@/shared/ui/AppLink/AppLink";
+import { RoutePaths } from "@/shared/config/routesConfig";
 interface ProjectsListProps { };
 export const ProjectsList = ({ }: ProjectsListProps) => {
   const projects = [
@@ -29,6 +32,11 @@ export const ProjectsList = ({ }: ProjectsListProps) => {
         <ProjectsItem />
         <ProjectsItem />
         <ProjectsItem />
+        {/* <ProjectsItem /> */}
+        <AppLink
+          className={s.seeMore}
+          to={RoutePaths.projects}
+        >See more</AppLink>
       </div>
     </section>
   );
