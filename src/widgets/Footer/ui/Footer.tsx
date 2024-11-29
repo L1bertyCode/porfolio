@@ -9,14 +9,14 @@ export const Footer = ({ }: FooterProps) => {
       <div className={s.topFooter}>
         <Logo />
         <div className={s.info}>
-          <div className={s.phone}>Phone</div>
-          <div className={s.email}>Email</div>
+          <div className={s.phone}>8(999)-999-99-99</div>
+          <div className={s.email}>mail-mail@mail.com</div>
           <Socials />
         </div>
       </div>
       <hr />
       <div className={s.bottomFooter}>
-        <NavList />
+        <NavList className={s.nav} />
         <div className={s.title}>Designed and built by <span className={s.name}>Viacheslav</span></div>
       </div>
     </footer>

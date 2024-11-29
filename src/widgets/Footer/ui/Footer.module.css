@@ -34,3 +34,13 @@
   background-image: var(--accent-color);
   font-size: var(--font-size-xl);
 }
+
+@media(max-width:767px) {
+  .nav {
+    display: none;
+  }
+
+  .bottomFooter {
+    justify-content: end;
+  }
+}
