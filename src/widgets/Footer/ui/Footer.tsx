@@ -7,7 +7,7 @@ export const Footer = ({ }: FooterProps) => {
   return (
     <footer className={s.footer}>
       <div className={s.topFooter}>
-        <Logo />
+        <Logo className={s.logo}/>
         <div className={s.info}>
           <div className={s.phone}>8(999)-999-99-99</div>
           <div className={s.email}>mail-mail@mail.com</div>

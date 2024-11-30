@@ -40,7 +40,15 @@
     display: none;
   }
 
+  .topFooter {
+    justify-content: center;
+  }
+
   .bottomFooter {
-    justify-content: end;
+    justify-content: center;
+  }
+
+  .logo {
+    display: none;
   }
 }
