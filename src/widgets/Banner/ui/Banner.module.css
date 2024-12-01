@@ -77,3 +77,21 @@
     margin-bottom: var(--indent-xxxl);
   }
 }
+
+@media(max-width:480px) {
+  .photoWrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .photoWrapper:before {
+    width: 280px;
+    height: 280px;
+  }
+
+  .photo {
+    width: 260px;
+    height: 260px;
+  }
+
+}
