@@ -14,3 +14,10 @@
   bottom: -30px;
   right: 10px;
 }
+
+@media(max-width:991px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
