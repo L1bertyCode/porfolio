@@ -12,7 +12,8 @@
 }
 
 .info {
-  min-width: 420px;
+  width: 100%;
+  max-width: 420px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +56,7 @@
 
 @media(max-width:480px) {
   .footer {
-    height: calc(var(--footer-height) + 155px);
+    height: calc(var(--footer-height) + 195px);
   }
 
   .info {
@@ -65,5 +66,12 @@
 
   .info>div {
     margin-bottom: 20px;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }

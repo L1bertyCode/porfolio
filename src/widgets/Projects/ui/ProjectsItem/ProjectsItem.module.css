@@ -2,7 +2,7 @@
   border-radius: 20px;
   box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
   background: rgb(54, 54, 54);
-  min-width: 290px;
+
   width: 31.5%;
   min-height: 567px;
   margin-bottom: 20px;
@@ -37,7 +37,8 @@
 
 @media(max-width:1200px) {
   .projectsItem {
-    /* width: 100%; */
+    width: 560px;
+
   }
 }
 
@@ -45,6 +46,13 @@
   .projectsItem {
     width: 560px;
     max-width: 100%;
+    min-height: auto;
+  }
+}
+
+@media(max-width: 767px) {
+  .projectsItem {
+    width: 100%;
     min-height: auto;
   }
 }
