@@ -9,7 +9,7 @@ const MainPage = () => {
       <Banner />
       <Stack />
       <ProjectsList />
-      <Contacts />
+      {/* <Contacts /> */}
     </>
   );
 };

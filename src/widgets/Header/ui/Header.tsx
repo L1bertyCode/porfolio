@@ -16,8 +16,8 @@ export const Header = ({ }: HeaderProps) => {
       <Logo />
       <div>
         <NavList className={s.nav} />
-        <span className={s.burger}></span>
         <Socials />
+        <span className={s.burger}></span>
         {/* <AppButton onClick={toggleTheme}
           colorType="accented">
           {t("Theme")}

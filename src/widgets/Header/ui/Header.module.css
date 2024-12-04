@@ -19,6 +19,8 @@
   background: var(--primary-color);
   position: relative;
   cursor: pointer;
+
+  margin-left: var(--indent-xl);
   display: none;
 }
 
@@ -65,6 +67,5 @@
 
   .burger {
     display: block;
-    margin-right: var(--indent-xl);
   }
 }
