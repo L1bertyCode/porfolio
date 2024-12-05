@@ -1,4 +1,5 @@
 import { MainPage } from "@/pages/MainPage";
+import { ProjectsPage } from "@/pages/ProjectsPage";
 import { StackPage } from "@/pages/StackPage";
 import { RouteProps } from "react-router-dom";
 
@@ -31,7 +32,7 @@ export const routesConfig: Record<AppRoutes, RouteProps & { name: string; }> = {
   },
   projects: {
     path: RoutePaths.projects,
-    element: <StackPage />,
+    element: <ProjectsPage />,
     name: "Projects"
   },
   contacts: {
