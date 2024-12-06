@@ -22,11 +22,13 @@ export const ProjectsList = ({ }: ProjectsListProps) => {
         text={"Projects"}
         header="h2"
         colorType="primary"
+        className="sectionTitle"
       />
       <br />
       <Text
         text={"Things I’ve built so far"}
         header="h3"
+        className="sectionSupTitle"
       />
       <div className={s.list}>
         <ProjectsItem />

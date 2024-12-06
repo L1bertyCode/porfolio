@@ -12,3 +12,10 @@
 .link:hover {
   fill: #A7A7A7
 }
+
+@media (max-width:480px) {
+
+  .socials {
+    width: 110px;
+  }
+}

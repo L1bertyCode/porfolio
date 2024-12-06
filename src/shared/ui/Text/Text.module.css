@@ -32,15 +32,28 @@
   font: var(--font-xl)
 }
 
-@media (max-width:991px) {
+
+
+/* @media (max-width:767px) {
   .h1 {
     font: var(--font-xxxl);
-
   }
-}
+} */
 
-@media (max-width:767px) {
+@media (max-width:480px) {
   .h1 {
-    font: var(--font-xxxxl);
+    font: var(--font-xxxl);
+  }
+
+  .h2 {
+    font: var(--font-xxl);
+  }
+
+  .h3 {
+    font: var(--font-xl);
+  }
+
+  .h4 {
+    font: var(--font-l);
   }
 }

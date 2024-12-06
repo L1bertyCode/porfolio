@@ -12,6 +12,14 @@ section {
   margin: 100px 0;
 }
 
+.sectionTitle {
+  margin-bottom: var(--indent-xl);
+}
+
+.sectionSupTitle {
+  margin-bottom: var(--indent-l);
+}
+
 /* 1200px
 992px
 768px
