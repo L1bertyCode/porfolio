@@ -15,7 +15,7 @@ import github from "@/shared/assets/img/stack/github.png";
 
 interface StackProps { };
 export const Stack = ({ }: StackProps) => {
-  const stackList = [html, css, js, react, redux, tailwind, sass, git, vscode, github];
+  const stackList = [html, css, js, react, redux, tailwind, sass, git, vscode, vscode, vscode, github];
   return (
     <section className={s.stack}>
       <Text
@@ -30,11 +30,11 @@ export const Stack = ({ }: StackProps) => {
       />
       <div className={s.stackList}>
         {/* <Svg /> */}
-        {stackList.map((s, i) => (
+        {stackList.map((stack, i) => (
           <div
-            className={s.stackItem}
+            className={s.stackItam}
             key={i}>
-            <img src={s} />
+            <img src={stack} />
           </div>))}
       </div>
 

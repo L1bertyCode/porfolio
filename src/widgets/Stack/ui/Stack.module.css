@@ -9,6 +9,27 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
-.stackItem {
+
+.stackItam {
+  width: 16%;
+  margin: 30px 0;
+}
+
+.stackItam>img {
+  width: 50%;
+}
+
+
+@media(max-width:767px) {
+  .stackItam {
+    width: 25%;
+  }
+}
+
+@media(max-width:480px) {
+  .stackItam {
+    width: 33%;
+  }
 }
