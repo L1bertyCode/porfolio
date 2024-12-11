@@ -26,10 +26,20 @@
   .stackItam {
     width: 25%;
   }
+
+  .stackItam>img {
+    width: 40%;
+  }
+
 }
 
 @media(max-width:480px) {
   .stackItam {
     width: 33%;
   }
+
+  .stackItam>img {
+    width: 45%;
+  }
+
 }

@@ -1,6 +1,10 @@
+import { Stack } from "@/widgets/Stack";
+
 const StackPage = () => {
   return (
-    <div>StackPage</div>
+    <div>
+      <Stack />
+    </div>
   );
 };
 export default StackPage;
