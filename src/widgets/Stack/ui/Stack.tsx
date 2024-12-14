@@ -1,6 +1,6 @@
 import { Text } from "@/shared/ui/Text/Text";
 import s from "./Stack.module.css";
-import { ReactComponent as Svg } from "@/shared/assets/source/Vector-1.svg";
+
 
 import html from "@/shared/assets/img/stack/html.png";
 import css from "@/shared/assets/img/stack/css.png";
@@ -12,6 +12,7 @@ import sass from "@/shared/assets/img/stack/sass.png";
 import git from "@/shared/assets/img/stack/git.png";
 import vscode from "@/shared/assets/img/stack/vscode.png";
 import github from "@/shared/assets/img/stack/github.png";
+import Gh from "@/shared/assets/svg/github.svg";
 
 interface StackProps { };
 export const Stack = ({ }: StackProps) => {
@@ -28,8 +29,8 @@ export const Stack = ({ }: StackProps) => {
         text="Technologies I’ve been working with recently"
         header="h3"
       />
+      <Gh />
       <div className={s.stackList}>
-        {/* <Svg /> */}
         {stackList.map((stack, i) => (
           <div
             className={s.stackItam}

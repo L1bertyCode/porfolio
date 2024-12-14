@@ -24,16 +24,21 @@ export function buildLoaders(isDev: boolean): RuleSetRule[] {
         },
       }]
   };
+
   const fileLoader = {
-    test: /\.(jpe?g|png|gif|svg)$/i,
-    loader: 'file-loader',
+    test: /\.(png|jpe?g|gif)$/i,
+    use: [
+      {
+        loader: 'file-loader',
+      },
+    ],
   };
+
 
   const svgrLoader = {
     test: /\.svg$/,
     use: ['@svgr/webpack'],
   };
-
   return [
     tsLoader,
     cssLoader,
